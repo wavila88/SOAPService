@@ -16,12 +16,14 @@ public class Request {
     private String PaymentValue;
     private String Bank;
     private String Country;
+    private String fileName;
 
     public String getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(String id) throws Exception {
+      
         this.id = id;
     }
 
@@ -63,6 +65,14 @@ public class Request {
 
     public void setCountry(String Country) {
         this.Country = Country;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
     
     
